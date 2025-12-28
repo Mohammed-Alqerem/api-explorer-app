@@ -19,7 +19,11 @@ getCategoryInfo();
 
 const displayCategoryInfo = async () => {
 
+
   const categoryInfo = await getCategoryInfo();
+
+     document.querySelector(".loading").classList.add("d-none");
+
 
   const response = categoryInfo.products;
 

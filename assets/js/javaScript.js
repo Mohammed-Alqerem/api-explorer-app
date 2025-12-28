@@ -11,6 +11,7 @@ const getCategoriesList = async ()=>{
 const displayCategories = async ()=>{
 
      const categories = await getCategoriesList();
+     document.querySelector(".loading").classList.add("d-none");
 
     const result = categories.map((cat)=>{
 
